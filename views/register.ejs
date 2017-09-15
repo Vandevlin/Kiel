@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Home Page</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel='stylesheet' href='/stylesheets/style.css'/>
+    <link rel="stylesheet" href="/stylesheets/themes/themes.min.css" />
+    <link rel="stylesheet" href="/stylesheets/themes/jquery.mobile.icons.min.css" />
+    <link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.5/jquery.mobile.structure-1.4.5.min.css" />
+    <script src="http://code.jquery.com/jquery-1.11.1.min.js"></script>
+    <script src="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+
+</head>
+<body>
+
+<div data-role="page">
+
+    <div data-role="header">
+        <h1>This is page Title</h1>
+    </div>
+
+    <div role="main" class="ui-content">
+        <p>Page content goes here.</p>
+        <form data-ajax="false" action="/doRegister" method="post">
+
+            <input placeholder="Username" type="text" name="username" id="">
+
+            <fieldset data-role="controlgroup">
+                <legend>Gender:</legend>
+                    <input type="radio" name="gender" id="radio-choice-1" value="Female" checked="checked">
+                    <label for="radio-choice-1">Female</label>
+                    <input type="radio" name="gender" id="radio-choice-2" value="Male">
+                    <label for="radio-choice-2">Male</label>
+            </fieldset>
+
+            <input placeholder="Password" type="password" name="password" id="">
+            <input placeholder="Email" type="email" name="email" id="">
+            <input type="submit" value="Submit">
+            <input type="reset" value="Reset" name="" id="">
+
+        </form>
+    </div>
+
+    <div data-role="footer">
+        <h4>This is page Title</h4>
+    </div>
+</div>
+
+</body>
+</html>
